@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>La calculatrice</h1>
+    <main>
+        <article>
+            <section id="screen">
+                <div><p id="display"></p></div>
+            </section>
+            <hr>
+            <section id="keys">
+                <div class="row">
+                    <div class="cells redKeys" onclick="pushKey('Backspace')">C</div>
+
+                    <div class="cells redKeys" onclick="pushKey('Delete')">C all</div>
+                </div>
+                <div class="row">
+                    <div class="cells" onclick="pushKey('7')">7</div>
+                    <div class="cells" onclick="pushKey('8')">8</div>
+                    <div class="cells" onclick="pushKey('9')">9</div>
+                    <div class="cells greenKeys" onclick="pushKey('/')">/</div>
+                </div>
+                <div class="row">
+                    <div class="cells" onclick="pushKey('4')">4</div>
+                    <div class="cells" onclick="pushKey('5')">5</div>
+                    <div class="cells" onclick="pushKey('6')">6</div>
+                    <div class="cells greenKeys" onclick="pushKey('*')">x</div>
+                </div>
+                <div class="row">
+                    <div class="cells" onclick="pushKey('1')">1</div>
+                    <div class="cells" onclick="pushKey('2')">2</div>
+                    <div class="cells" onclick="pushKey('3')">3</div>
+                    <div class="cells greenKeys" onclick="pushKey('-')">-</div>
+                </div>
+                <div class="row">
+                    <div class="cells" onclick="pushKey('0')">0</div>
+                    <div class="cells greenKeys" onclick="pushKey('.')">.</div>
+                    <div class="cells greenBackground" onclick="pushKey('=')">=</div>
+                    <div class="cells greenKeys" onclick="pushKey('+')">+</div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="/assets/scripts/script.js"></script>
+</body>
+</html>
